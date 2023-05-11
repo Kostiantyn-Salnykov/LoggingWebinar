@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "loggingwebinar"
+version = "0.1.0"
+description = ""
+authors = ["Kostiantyn Salnykov <kostiantyn.salnykov@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.0.3"
+fastapi = {extras = ["uvicorn"], version = "^0.79.1"}
+uvicorn = "^0.17.4"
+aiosmtpd = "^1.4.2"
+gunicorn = "^20.1.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
